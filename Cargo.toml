@@ -1,7 +1,30 @@
 [package]
-name = "da14531"
-version = "0.1.0"
+categories = [
+  "embedded",
+  "hardware-support",
+  "no-std",
+]
+description = "Peripheral access crate for the DA14531 microcontroller"
+documentation = "https://docs.rs/da14531"
 edition = "2021"
+keywords = [
+  "arm",
+  "cortex-m",
+  "svd2rust",
+  "pac",
+  "embedded",
+  "dialog",
+  "da14531",
+  "no_std"
+]
+license = "MIT"
+name = "da14531"
+readme = "README.md"
+repository = "https://github.com/rapitag/da14531"
+version = "0.1.0"
+
+[package.metadata.docs.rs]
+targets = ["thumbv6m-none-eabi"]
 
 [dependencies]
 cortex-m = "0.7"
