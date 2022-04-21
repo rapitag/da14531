@@ -8,14 +8,11 @@ description = "Peripheral access crate for the DA14531 microcontroller"
 documentation = "https://docs.rs/da14531"
 edition = "2021"
 keywords = [
-  "arm",
   "cortex-m",
   "svd2rust",
-  "pac",
   "embedded",
-  "dialog",
   "da14531",
-  "no_std"
+  "no_std",
 ]
 license = "MIT"
 name = "da14531"
