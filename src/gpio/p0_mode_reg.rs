@@ -1,22 +1,22 @@
-#[doc = "Register `P00_MODE_REG` reader"]
-pub struct R(crate::R<P00_MODE_REG_SPEC>);
+#[doc = "Register `P0_MODE_REG[%s]` reader"]
+pub struct R(crate::R<P0_MODE_REG_SPEC>);
 impl core::ops::Deref for R {
-    type Target = crate::R<P00_MODE_REG_SPEC>;
+    type Target = crate::R<P0_MODE_REG_SPEC>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-impl From<crate::R<P00_MODE_REG_SPEC>> for R {
+impl From<crate::R<P0_MODE_REG_SPEC>> for R {
     #[inline(always)]
-    fn from(reader: crate::R<P00_MODE_REG_SPEC>) -> Self {
+    fn from(reader: crate::R<P0_MODE_REG_SPEC>) -> Self {
         R(reader)
     }
 }
-#[doc = "Register `P00_MODE_REG` writer"]
-pub struct W(crate::W<P00_MODE_REG_SPEC>);
+#[doc = "Register `P0_MODE_REG[%s]` writer"]
+pub struct W(crate::W<P0_MODE_REG_SPEC>);
 impl core::ops::Deref for W {
-    type Target = crate::W<P00_MODE_REG_SPEC>;
+    type Target = crate::W<P0_MODE_REG_SPEC>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
@@ -28,9 +28,9 @@ impl core::ops::DerefMut for W {
         &mut self.0
     }
 }
-impl From<crate::W<P00_MODE_REG_SPEC>> for W {
+impl From<crate::W<P0_MODE_REG_SPEC>> for W {
     #[inline(always)]
-    fn from(writer: crate::W<P00_MODE_REG_SPEC>) -> Self {
+    fn from(writer: crate::W<P0_MODE_REG_SPEC>) -> Self {
         W(writer)
     }
 }
@@ -122,21 +122,22 @@ are also mapped to P0\\[11:8\\]) 19 = UART1_CTSN 20 = UART1_RTSN 21 = Reserved 2
         self
     }
 }
-#[doc = "P00 Mode Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p00_mode_reg](index.html) module"]
-pub struct P00_MODE_REG_SPEC;
-impl crate::RegisterSpec for P00_MODE_REG_SPEC {
+#[doc = "Configuration of GPIO pins\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_mode_reg](index.html) module"]
+pub struct P0_MODE_REG_SPEC;
+impl crate::RegisterSpec for P0_MODE_REG_SPEC {
     type Ux = u16;
 }
-#[doc = "`read()` method returns [p00_mode_reg::R](R) reader structure"]
-impl crate::Readable for P00_MODE_REG_SPEC {
+#[doc = "`read()` method returns [p0_mode_reg::R](R) reader structure"]
+impl crate::Readable for P0_MODE_REG_SPEC {
     type Reader = R;
 }
-#[doc = "`write(|w| ..)` method takes [p00_mode_reg::W](W) writer structure"]
-impl crate::Writable for P00_MODE_REG_SPEC {
+#[doc = "`write(|w| ..)` method takes [p0_mode_reg::W](W) writer structure"]
+impl crate::Writable for P0_MODE_REG_SPEC {
     type Writer = W;
 }
-#[doc = "`reset()` method sets P00_MODE_REG to value 0x0200"]
-impl crate::Resettable for P00_MODE_REG_SPEC {
+#[doc = "`reset()` method sets P0_MODE_REG[%s]
+to value 0x0200"]
+impl crate::Resettable for P0_MODE_REG_SPEC {
     #[inline(always)]
     fn reset_value() -> Self::Ux {
         0x0200
