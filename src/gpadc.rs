@@ -7,7 +7,9 @@ pub struct RegisterBlock {
     pub gp_adc_ctrl2_reg: crate::Reg<gp_adc_ctrl2_reg::GP_ADC_CTRL2_REG_SPEC>,
     #[doc = "0x04 - General Purpose ADC Third Control Register"]
     pub gp_adc_ctrl3_reg: crate::Reg<gp_adc_ctrl3_reg::GP_ADC_CTRL3_REG_SPEC>,
-    _reserved3: [u8; 0x02],
+    #[doc = "0x06 - General Purpose ADC Input Selection Register"]
+    pub gp_adc_sel_reg: crate::Reg<gp_adc_sel_reg::GP_ADC_SEL_REG_SPEC>,
+    _reserved4: [u8; 0x01],
     #[doc = "0x08 - General Purpose ADC Positive Offset Register"]
     pub gp_adc_offp_reg: crate::Reg<gp_adc_offp_reg::GP_ADC_OFFP_REG_SPEC>,
     #[doc = "0x0a - General Purpose ADC Negative Offset Register"]
@@ -18,7 +20,7 @@ pub struct RegisterBlock {
     pub gp_adc_clear_int_reg: crate::Reg<gp_adc_clear_int_reg::GP_ADC_CLEAR_INT_REG_SPEC>,
     #[doc = "0x10 - General Purpose ADC Result Register"]
     pub gp_adc_result_reg: crate::Reg<gp_adc_result_reg::GP_ADC_RESULT_REG_SPEC>,
-    _reserved8: [u8; 0x0a],
+    _reserved9: [u8; 0x0a],
     #[doc = "0x1c - "]
     pub gp_adc_param_dif_reg: crate::Reg<gp_adc_param_dif_reg::GP_ADC_PARAM_DIF_REG_SPEC>,
     #[doc = "0x1e - "]
@@ -48,6 +50,10 @@ pub mod gp_adc_offn_reg;
 pub type GP_ADC_OFFP_REG = crate::Reg<gp_adc_offp_reg::GP_ADC_OFFP_REG_SPEC>;
 #[doc = "General Purpose ADC Positive Offset Register"]
 pub mod gp_adc_offp_reg;
+#[doc = "GP_ADC_SEL_REG register accessor: an alias for `Reg<GP_ADC_SEL_REG_SPEC>`"]
+pub type GP_ADC_SEL_REG = crate::Reg<gp_adc_sel_reg::GP_ADC_SEL_REG_SPEC>;
+#[doc = "General Purpose ADC Input Selection Register"]
+pub mod gp_adc_sel_reg;
 #[doc = "GP_ADC_PARAM_DIF_REG register accessor: an alias for `Reg<GP_ADC_PARAM_DIF_REG_SPEC>`"]
 pub type GP_ADC_PARAM_DIF_REG = crate::Reg<gp_adc_param_dif_reg::GP_ADC_PARAM_DIF_REG_SPEC>;
 #[doc = ""]
